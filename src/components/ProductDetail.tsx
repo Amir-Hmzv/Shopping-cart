@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getUser } from "../api";
 import Spiner from "./Spiner";
@@ -46,8 +46,6 @@ const ProductDetail = () => {
     description,
     image,
     price,
-    rating,
-    id,
   }: ProductProps = data;
   useDocumentTitle(`${title}`)
 
